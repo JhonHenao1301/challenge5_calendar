@@ -1,0 +1,119 @@
+
+.calendar {
+  display: flex;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.wrapper {
+  inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.calendarContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  inline-size: 30rem;
+  block-size: 31rem;
+  flex: 1;
+}
+
+.calendarDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  block-size: 15rem;
+  gap: 1rem;
+  background: var(--black);
+  color: var(--white);
+}
+
+.calendarDay h1 {
+  font-size: 6rem;
+  line-height: 5rem;
+  font-weight: 500;
+}
+
+.calendarDay p {
+  font: var(--desktop-body2-bold);
+}
+
+.calendarAll {
+    background: var(--white);
+    inline-size: inherit;
+    block-size: inherit;
+}
+
+.calendarAll-content {
+  display: flex;
+  overflow-x: auto;
+  overflow: hidden;
+}
+
+.calendarAll-content .month-container {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 2.9rem;
+  padding-inline-end: 2.9rem;
+}
+
+.calendarAll h1, h3, li {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.calendarAll-content ol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2rem;
+  list-style: none;
+}
+
+.calendarAll-content li {
+  font: var(--mobile-body2regular);
+}
+
+.calendarAll-content-title {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+.calendarAll-content-title--bottom {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.calendarAll-content--content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.calendarAll button {
+  background: var(--primary);
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  color: var(--white);
+  margin-block-start: 2rem;
+}
+
+.calendarAll-content .weekdays {
+  font: var(--desktop-body2-bold);
+}
+
+.first-day {
+  grid-column-start: var(--first-day-start);
+}
+
+
